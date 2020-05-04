@@ -88,14 +88,13 @@ public class String_ArrayHw {
          * Calculate the length of your name, without using length() method of String class.
          *
          */
-         String firstName1= "mahadi";
-         int count = 0;
-         for (char c : firstName1.toCharArray()){
-             count++;
 
-         }
-        System.out.println("Calculate the length of your name, without using length() method of String clas = " + count );
+        
 
+         String firstName = "hasan";
+         String[] firstArray = firstName.split("");
+         int firstInt = firstArray.length;
+        System.out.println("Calculate the length of your name, without using length() method of String class = " + firstInt );
 
 
 

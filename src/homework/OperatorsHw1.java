@@ -10,7 +10,7 @@ public class OperatorsHw1 {
         double numOfPopulation = 1.8;
         double interastRate = 15.3;
         double balanceOfAccounts = 10000;
-        String sunrise = " No, THE SUN RISES FROM THE EAST.";
+       boolean sunrise = false;
         char in1 = 'M';
         char in2 = 'A';
         String name = "Mahadi Hasan Arnab";
