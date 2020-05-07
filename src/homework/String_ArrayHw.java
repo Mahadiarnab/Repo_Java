@@ -47,7 +47,7 @@ public class String_ArrayHw {
 
         // 4. Does your name ends with "M" (Ignoring cases)
 
-        Boolean isMyNameEndsWithM = myNameInUpperCase.endsWith("M");
+        boolean isMyNameEndsWithM = myNameInUpperCase.endsWith("M");
         System.out.println("Does My Name End With 'M'? = " + isMyNameEndsWithM +".");
 
 
@@ -89,7 +89,7 @@ public class String_ArrayHw {
          *
          */
 
-        
+
 
          String firstName = "hasan";
          String[] firstArray = firstName.split("");
