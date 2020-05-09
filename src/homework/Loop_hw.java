@@ -14,7 +14,7 @@ public class Loop_hw {
          */
         int studentScore = 140;
         double maxScore = 150.00;
-        double percentage = studentScore*100/150;
+        double percentage = studentScore*100/maxScore;
 
 
         if (percentage>=91 && percentage<=100){
