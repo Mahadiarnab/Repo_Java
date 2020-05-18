@@ -19,9 +19,15 @@ public class Home_Work5 {
 
         String msg = "have a great day to you";
         String[] msg1 = msg.split(" ");
-        String msg2 = (msg1[0].substring(0, 1) + msg1[1].substring(0, 1) + msg1[2].substring(0, 1) + msg1[3].substring(0, 1) + msg1[4].substring(0, 1) + msg1[5].substring(0, 1)).toUpperCase();
+        String abbre= " ";
 
-        System.out.println("Abbreviation : " + msg2);
+
+
+        for (String word:msg1) {
+           abbre=abbre+word.charAt(0);
+
+
+        } System.out.println("Abbreviation: " + abbre.toUpperCase());
 
 
         /**
@@ -38,16 +44,12 @@ public class Home_Work5 {
         String line = "once upOn a tiMe in the UNIVERSE";
         System.out.println("Line (Before modification) : " + line);
         String[] line1 = line.split(" ");
-        String newLine1 = line1[0].substring(0, 1).toUpperCase() + line1[0].substring(1).toLowerCase();
-        String newLine2 = line1[1].substring(0, 1).toUpperCase() + line1[1].substring(1).toLowerCase();
-        String newLine3 = line1[2].substring(0, 1).toUpperCase();
-        String newLine4 = line1[3].substring(0, 1).toUpperCase() + line1[3].substring(1).toLowerCase();
-        String newLine5 = line1[4].substring(0, 1).toUpperCase() + line1[4].substring(1).toLowerCase();
-        String newLine6 = line1[5].substring(0, 1).toUpperCase() + line1[5].substring(1).toLowerCase();
-        String newLine7 = line1[6].substring(0, 1).toUpperCase() + line1[6].substring(1).toLowerCase();
-        System.out.println("Line (After modification) : " + newLine1 + " " + newLine2 + " " + newLine3 + " " + " " + newLine4 + " " + newLine5 + " " + newLine6 + " " + newLine7);
+        String afterModification = "";
+        for(String words:line1){
+             afterModification= afterModification+ words.substring(0,1).toUpperCase()+words.substring(1).toLowerCase();
 
-
+        }
+        System.out.println("After modification : " + afterModification);
 
         /**
          * reverse a string
@@ -94,7 +96,7 @@ public class Home_Work5 {
         for (int i = 0; i < originalWord.length(); i++) {
             if (originalWord.charAt(i) != reverse1.charAt(i)) {
                 palindrome = false;
-            }
+            }  break;
         }
         if (palindrome) {
 
@@ -105,7 +107,7 @@ public class Home_Work5 {
 
 
 
-        
+
 
 
 
